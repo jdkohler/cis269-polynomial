@@ -5,7 +5,18 @@
 using namespace std;
 
 template <class T>
-void print(vector<T>& poly)
+class Polynomial
+{
+	public:
+		print();
+		add();
+		multiply();
+		
+	private:
+};
+
+template <class T>
+void Polynomial<T>::print(vector<T>& poly)
 {
 	int exponent = poly.size();
 	
@@ -25,7 +36,7 @@ void print(vector<T>& poly)
 }
 
 template <class T>
-void multiply(vector<T>& poly1, vector<T>& poly2)
+void Polynomial<T>::multiply(vector<T>& poly1, vector<T>& poly2)
 {
 	vector<T> resultPoly = {0,0,0,0,0};
 
@@ -37,7 +48,7 @@ void multiply(vector<T>& poly1, vector<T>& poly2)
 }
 
 template <class T>
-void add(vector<T>& poly1, vector<T>& poly2)
+void Polynomial<T>::add(vector<T>& poly1, vector<T>& poly2)
 {
 	vector<T> resultPoly = {0,0,0};
 	
@@ -49,11 +60,13 @@ void add(vector<T>& poly1, vector<T>& poly2)
 }
 
 int main(int argc, char *argv[]) {
+	
+	Polynomial<int> polyClass;
 	vector<int> firstPoly = {1,5,1};
 	vector<int> secondPoly = {3,-10,15};
 	
-	multiply(firstPoly, secondPoly);
-	add(firstPoly, secondPoly);
+	polyClass.multiply(firstPoly, secondPoly);
+	polyClass.add(firstPoly, secondPoly);
 	
 	return 0;	
 }
