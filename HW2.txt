@@ -1,0 +1,42 @@
+1.
+ex 10 p47
+Assume the following class declaration:
+template<class T>
+class genClass {
+	...
+	char aFunction(...);
+	... };
+What is wrong with this function definition?
+char genClass::aFunction(...) { ... };
+
+It should look like this:
+char genClass<T>::aFunction(...) { ... };
+
+2.
+ex 13 p47
+
+template<class T, int size = 50>
+class genClass {
+	T storage[size];
+	..................
+	void memberFun() {
+		............
+		if (someVar < size) { ...... }
+		............
+} };
+Transform the declaration which uses an integer variable size as a parameter to template to a declaration of genClass, which does not include size as a parameter to template and yet allows for flexibility of the value of size. Consider a declaration of genClass's constructor. Is there any advantage of one version over another?
+
+template<class T, int size>
+class genClass {
+	T storage[size]
+
+Take the parameter out of the template, and put it into the constructor.
+
+
+3.
+Create a class template for polynomials of degree 2 (ax^2 + bx + c). Add addition, and multiplcation capability. Include a driver file, and test cases. Submit the code, and test cases
+
+If you need a refresher, here is how to multiply two polynomials: http://www.webmath.com/polymult.html
+
+4.
+Submit a screenshot of your github directory with at least 2 branches

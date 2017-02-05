@@ -1,0 +1,20 @@
+What should the input look like for our program
+It can be anything, just 3 integers, they can be hard coded in program, or be parameters
+Two vectors
+
+What should the output of the program look like?
+The output can just be printer vectors
+
+Is it just that it's calling the base class, and can't be done?
+
+
+
+What is the 2nd question asking.
+Put the parameter in the constructor.
+
+Class with just operations.
+
+
+
+Question 1
+It doesn't have the T in it.
