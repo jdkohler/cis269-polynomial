@@ -8,9 +8,9 @@ template <class T>
 class Polynomial
 {
 	public:
-		print();
-		add();
-		multiply();
+		void print(vector<T>& poly);
+		void add(vector<T>& poly1, vector<T>& poly2);
+		void multiply(vector<T>& poly1, vector<T>& poly2);
 		
 	private:
 };
