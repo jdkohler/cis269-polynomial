@@ -1,3 +1,5 @@
+// Kohler CIS269 HW2
+
 #include <iostream>
 #include "genClass.h"
 

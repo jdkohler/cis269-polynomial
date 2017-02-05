@@ -1,3 +1,5 @@
+Kohler CIS269 HW2
+
 1.
 ex 10 p47
 Assume the following class declaration:
@@ -30,7 +32,7 @@ template<class T, int size>
 class genClass {
 	T storage[size]
 
-Take the parameter out of the template, and put it into the constructor.
+By having the parameter in the template itself, it can be generated dynamically at compile time. This features affords us a great deal of flexibility that to implement in the constructor is burdensome and requires a great deal of error handling. Also as you can tell in my example of this I had to set some arbitrary upper limit to the size, and we could set any size smaller than that, but then had to add error handling for it to perform correctly. Overall the template is a better way to do it, and aside from needing the STL I can't think of a downside of using the template.
 
 
 3.

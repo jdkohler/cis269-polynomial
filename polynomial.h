@@ -1,6 +1,5 @@
-//
-// polynomial.h
-// Created by Jeffrey Kohler on 2/5/17.
+// Kohler CIS269 HW2
+
 #include <vector>
 
 using namespace std;

@@ -1,3 +1,8 @@
+// Kohler CIS269 HW2
+
+#ifndef _genClass_h_
+#define _genClass_h_
+
 const int LIMIT = 100;
 
 template<class T>
@@ -49,3 +54,5 @@ public:
 		}
 	}
 };
+
+#endif
